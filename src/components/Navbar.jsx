@@ -21,15 +21,14 @@ const Navbar = () => {
     <Disclosure 
       as="nav"
       className={classNames(
-        scrollPosition > 0 ? 'shadow-lg backdrop-filter backdrop-blur-lg bg-white py-2 bg-opacity-80 text-gray-800' : 'py-4 sm:py-8 shadow-none bg-transparent text-white',
-        'fixed top-0 z-10 transition duration-300 px-4 sm:px-16 w-full flex items-center',
+        scrollPosition > 0 ? 'shadow-lg backdrop-filter backdrop-blur-lg bg-white py-2 bg-opacity-80 text-gray-800' : 'py-2 sm:py-6 shadow-none bg-transparent text-white',
+        'fixed top-0 z-20 transition duration-300 px-4 sm:px-16 w-full flex items-center',
       )}
     >
       {({ open }) => (
-        <>
-          <div className="flex items-center justify-between w-full">
+        <>  
             <div className="flex items-center justify-between w-full">
-              <Link to="/" className="text-md sm:text-xl font-bold"><img src={Logo} className="w-16 sm:w-20" alt="CV. Karyatama Agro Cemerlang" /></Link>
+              <Link to="/"><img src={Logo} className="w-12 sm:w-16" alt="CV. Karyatama Agro Cemerlang" /></Link>
               <div className="hidden sm:block">
                 <div className="flex space-x-8 items-center">
                   {navigation.map((item) => (
@@ -68,7 +67,6 @@ const Navbar = () => {
                 )}
               </Disclosure.Button>
             </div>
-          </div>
           <Disclosure.Panel className="sm:hidden absolute top-0 left-0 h-screen w-screen bg-white">
             <div className="z-30 flex flex-col justify-center items-center h-full">
               {navigation.map((item) => (

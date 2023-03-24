@@ -1,5 +1,5 @@
 import OfficeImage from '../assets/img/office.jpg';
-import ProductImage from '../assets/img/product-2.jpg';
+import ProductImage from '../assets/img/1.jpg';
 
 const AboutUs = () => {
   return (

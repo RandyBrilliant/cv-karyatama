@@ -4,11 +4,11 @@ import PageLayout from "./PageLayout"
 const ProductList = () => {
   return (
       <PageLayout>
-        <h2 className="mt-40 text-2xl font-bold text-gray-700 md:text-4xl">
+        <h2 className="mt-16 text-2xl font-bold text-gray-700 md:text-4xl">
           Produk/Jasa yang Kami Tawarkan
         </h2>
         <div
-          className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 sm:grid-cols-1 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3"
+          className="mt-10 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 sm:grid-cols-1 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3"
         >
           {productList.map(product => (
             <section className="group relative bg-white ransition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" key={product.id}>
