@@ -1,10 +1,11 @@
-import { Disclosure, Transition } from '@headlessui/react';
+import { Disclosure } from '@headlessui/react';
 import { navigation } from '../utils/data';
 import { Link, useLocation } from 'react-router-dom';
 
 import CallIcon from '../assets/icons/call.svg';
 import MenuIcon from '../assets/icons/menu-outline.svg';
 import CloseIcon from '../assets/icons/close-outline.svg';
+import Logo from '../assets/logo.png';
 
 import { useScrollPosition } from '../hooks/useScrollPosition';
 
@@ -20,7 +21,7 @@ const Navbar = () => {
     <Disclosure 
       as="nav"
       className={classNames(
-        scrollPosition > 0 ? 'shadow-lg backdrop-filter backdrop-blur-lg bg-white py-2 bg-opacity-70 text-gray-800' : 'py-4 sm:py-8 shadow-none bg-transparent text-white',
+        scrollPosition > 0 ? 'shadow-lg backdrop-filter backdrop-blur-lg bg-white py-2 bg-opacity-80 text-gray-800' : 'py-4 sm:py-8 shadow-none bg-transparent text-white',
         'fixed top-0 z-10 transition duration-300 px-4 sm:px-16 w-full flex items-center',
       )}
     >
@@ -28,14 +29,14 @@ const Navbar = () => {
         <>
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center justify-between w-full">
-              <Link to="/" className="text-md sm:text-xl font-bold">CV. Karyatama Agro Cemerlang</Link>
-              <div className="hidden sm:ml-6 sm:block">
+              <Link to="/" className="text-md sm:text-xl font-bold"><img src={Logo} className="w-16 sm:w-20" alt="CV. Karyatama Agro Cemerlang" /></Link>
+              <div className="hidden sm:block">
                 <div className="flex space-x-8 items-center">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={classNames(location.pathname === item.href ? "border-b-2 border-blue-400 font-bold" : " hover:text-gray-400 font-semibold", "text-md"
+                      className={classNames(location.pathname === item.href ? "border-b-2 border-red-700 font-extrabold" : " hover:text-gray-400 font-semibold", "text-md transition duration-100"
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
@@ -76,7 +77,7 @@ const Navbar = () => {
                   as={Link}
                   to={item.href}
                   className={classNames(
-                    location.pathname === item.href ? 'font-bold' : 'font-medium hover:bg-gray-800 hover:text-white',
+                    location.pathname === item.href ? 'font-bold' : 'font-medium hover:bg-red-700 hover:text-white',
                     'text-gray-800 text-lg border-y w-full text-center py-4 transition duration-150'
                   )}
                   aria-current={location.pathname === item.href ? 'page' : undefined}

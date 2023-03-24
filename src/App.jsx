@@ -7,10 +7,11 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
-    <div>
+    <ScrollToTop>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,7 +31,7 @@ const App = () => {
         notification
         notificationSound
       />
-    </div>
+    </ScrollToTop>
   )
 }
 

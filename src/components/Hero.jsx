@@ -1,4 +1,9 @@
-import HeroImage from '../assets/img/building.jpg';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Autoplay } from "swiper";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
 const Hero = () => {
   return (

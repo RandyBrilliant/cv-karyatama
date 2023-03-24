@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <main>
       <section id="hero" className="h-[400px] bg-about-us-bg bg-center bg-cover bg-no-repeat text-center">
-        <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full w-full">
+        <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">
             <h1 className="md:text-5xl text-4xl font-bold leading-tight my-5 capitalize font-primary text-white">Tentang Kami</h1>
             <p className="text-xl font-secondary mb-5 text-gray-300">
@@ -17,7 +17,8 @@ const AboutUs = () => {
       <section>
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div className="flex flex-col items-center justify-center text-center px-6 md:px-12 xl:px-6">
-            <h2 className="text-2xl font-bold">Cerita Kami</h2>
+            <h2 className="text-3xl font-bold text-red-500">Profil Perusahaan</h2>
+            <h3 className="text-xl font-medium italic">CV. Karyatama Agro Cemerlang</h3>
             <p className="mt-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti porro, dolores ex voluptates distinctio ea! Ut sapiente recusandae quod, omnis optio, voluptate eum repudiandae, voluptatem quae sequi exercitationem. Eos.</p>
           </div>
           <div>
