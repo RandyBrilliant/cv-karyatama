@@ -12,11 +12,11 @@ import Image4 from '../assets/img/4.jpg';
 
 // import required modules
 import { Navigation, Pagination } from "swiper";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <header className="w-screen h-1/2">
-      <div className="w-screen h-80 sm:h-[600px] z-10 backdrop-brightness-75 absolute top-0 left-0"></div>
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -32,13 +32,34 @@ const Hero = () => {
         className="w-screen max-h-[600px]"
       >
         <SwiperSlide>
-        <img src={Image1} className="w-screen h-80 sm:h-[600px] object-cover" />
+          <div className="relative w-full h-full">
+            <img src={Image1} className="w-screen h-80 sm:h-[600px] object-cover" />
+            <div className="text-white backdrop-brightness-75 w-screen max-w-screen h-full absolute flex flex-col items-center justify-center bottom-0 text-center">
+              <h3 className="font-bold text-xl sm:text-2xl">Your Title</h3>
+              <p className="text-sm sm:text-base mt-2 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nemo. Illo voluptatibus voluptatum asperiores doloribus obcaecati doloremque magni quibusdam minus consectetur.</p>
+              <Link to="/" className="text-md sm:text-xl border-2 px-5 py-2 mt-5 transition duration-150 hover:bg-white hover:text-black font-bold">Pelajari lebih lanjut</Link>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image2} className="w-screen h-80 sm:h-[600px] object-cover" />
+          <div className="relative w-full h-full">
+            <img src={Image2} className="w-screen h-80 sm:h-[600px] object-cover" />
+            <div className="text-white backdrop-brightness-75 w-screen max-w-screen h-full absolute flex flex-col items-center justify-center bottom-0 text-center">
+              <h3 className="font-bold text-xl sm:text-2xl">Your Title</h3>
+              <p className="text-sm sm:text-base mt-2 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nemo. Illo voluptatibus voluptatum asperiores doloribus obcaecati doloremque magni quibusdam minus consectetur.</p>
+              <Link to="/" className="text-md sm:text-xl border-2 px-5 py-2 mt-5 transition duration-150 hover:bg-white hover:text-black font-bold">Pelajari lebih lanjut</Link>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image4} className="w-screen h-80 sm:h-[600px] object-cover"/>
+          <div className="relative w-full h-full">
+            <img src={Image4} className="w-screen h-80 sm:h-[600px] object-cover" />
+            <div className="text-white backdrop-brightness-75 w-screen max-w-screen h-full absolute flex flex-col items-center justify-center bottom-0 text-center">
+              <h3 className="font-bold text-xl sm:text-2xl">Your Title</h3>
+              <p className="text-sm sm:text-base mt-2 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nemo. Illo voluptatibus voluptatum asperiores doloribus obcaecati doloremque magni quibusdam minus consectetur.</p>
+              <Link to="/" className="text-md sm:text-xl border-2 px-5 py-2 mt-5 transition duration-150 hover:bg-white hover:text-black font-bold">Pelajari lebih lanjut</Link>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </header>
