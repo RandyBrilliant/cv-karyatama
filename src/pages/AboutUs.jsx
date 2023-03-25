@@ -1,5 +1,13 @@
+import { Link } from 'react-router-dom';
+
+import PageLayout from '../components/PageLayout';
+
+
 import OfficeImage from '../assets/img/office.jpg';
 import ProductImage from '../assets/img/1.jpg';
+import VisionImage from '../assets/icons/vision.svg';
+import MissionImage from '../assets/icons/mission.svg';
+import CheckmarkImage from '../assets/icons/checkmark.svg';
 
 const AboutUs = () => {
   return (
@@ -14,36 +22,88 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="grid grid-cols-1 sm:grid-cols-2">
-          <div className="flex flex-col items-center justify-center text-center px-6 md:px-12 xl:px-6">
-            <h2 className="text-3xl font-bold text-red-500">Profil Perusahaan</h2>
-            <h3 className="text-xl font-medium italic">CV. Karyatama Agro Cemerlang</h3>
-            <p className="mt-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti porro, dolores ex voluptates distinctio ea! Ut sapiente recusandae quod, omnis optio, voluptate eum repudiandae, voluptatem quae sequi exercitationem. Eos.</p>
+      <PageLayout>
+        <div className="py-20 space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
+          <div className="md:5/12 lg:w-1/2">
+            <img
+              src={OfficeImage}
+              alt="image"
+              loading="lazy"
+            />
           </div>
-          <div>
-            <img src={OfficeImage} className="object-cover" alt="CV. Karyatama Agro Cemerlang" />
+          <div className="md:7/12 lg:w-1/2">
+            <h2 className="text-red-700 text-3xl sm:text-4xl font-bold">
+              Profil Perusahaan
+            </h2>
+            <h3 className="text-lg sm:text-xl font-medium italic">CV. Karyatama Agro Cemerlang</h3>
+            <p className="my-8 text-gray-800">
+              CV. Karyatama Agro Cemerlang merupakan perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang pelayanan jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan klien kami.
+            </p>
+            <div className="divide-y space-y-4 divide-gray-800">
+              <div className="mt-8 flex gap-4 md:items-center">
+                <div className="w-16 h-16 flex gap-4 rounded-full bg-red-700">
+                  <img src={VisionImage} className="m-auto h-8 w-8" aria-hidden="true" />    
+                </div>
+                <div className="w-5/6">
+                  <h4 className="font-bold text-xl text-red-500 uppercase">Visi</h4>
+                  <p className="text-gray-800 italic">Menjadi kemitraan yang produktif, inovatif dan terpercaya.</p>
+                </div> 
+              </div> 
+              <div className="pt-4 flex gap-4 md:items-center">
+                <div className="w-16 h-16 flex gap-4 rounded-full bg-red-700">  
+                  <img src={MissionImage} className="m-auto h-8 w-8" aria-hidden="true" />                                    
+                </div>
+                <div className="w-5/6">
+                  <h4 className="font-bold text-xl text-red-500 uppercase">Misi</h4>
+                  <ol className="text-gray-800 list-decimal list-inside italic">
+                    <li>Mengutamakan pelayanan prima kepada mitra.</li>
+                    <li>Menjalin kerjasama dengan para pihak dengan prinsip saling menguntungkan dan peningkatan nilai tambah.</li>
+                  </ol>
+                </div> 
+              </div> 
+            </div>
+          </div>
+        </div>
+      </PageLayout>
+      <section className="bg-red-700">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+          <div className="text-center">
+            <h2 className="mb-4 text-4xl font-extrabold text-white">Segera Melakukan Konsultasi!</h2>
+            <p className="mb-8 font-light text-white sm:text-xl">Dan dapatkan penawaran terbaik dari kami!</p>
+            <Link to="/hubungi-kami" className="bg-white py-4 px-10 rounded-full font-bold">Hubungi Kami</Link>
           </div>
         </div>
       </section>
-      <section className="bg-gray-200">
-        <div className="grid grid-cols-1 sm:grid-cols-2">
-            <div className="mr-auto place-self-center lg:col-span-7">
-                <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Payments tool for software companies</h1>
-                <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
-                <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                    Get started
-                    <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-                <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                    Speak to Sales
-                </a> 
-            </div>
-            <div>
-                <img src={ProductImage} className="rounded-md h-20 shadow-md" alt="Product Image" />
-            </div>                
+      <PageLayout>
+        <div className="py-20 space-y-6 md:flex flex-row md:gap-6 justify-center md:space-y-0 lg:items-center">
+          <div className="md:5/12 lg:w-1/2">
+            <img
+              src={ProductImage}
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div className="md:7/12 lg:w-1/2">
+            <h2 className="text-red-700 text-3xl sm:text-4xl font-bold">
+              Klien Kami
+            </h2>
+            <p className="my-5 text-gray-800">
+              Kami telah dipercaya oleh banyak perusahaan besar dalam menyediakan produk serta layanan terbaik. Pengalaman kami sudah teruji melalui beberapa klien dibawah ini yang telah menjadi mitra kami selama bertahun-tahun. Beberapa diantaranya seperti:
+            </p>
+            <ul className="text-gray-800 list-inside font-semibold space-y-1">
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Karya Tanah Subur</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Surya Panen Subur</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Perkebunan Limbah Bhakti</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Kimia Tirta Utama</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Eka Dura Indonesia</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Sawit Asahan Indah</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Sari Lembah Subur</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Tunggal Perkasa Plantation</li>
+              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Sari Aditya Loka</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </PageLayout>
     </main>
   )
 }
