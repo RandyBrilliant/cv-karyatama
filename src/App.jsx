@@ -3,7 +3,9 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import Products from './pages/Products';
+import Pabrikasi from './pages/Pabrikasi';
+import Reparasi from './pages/Reparasi';
+import SpareParts from './pages/SpareParts';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -16,7 +18,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tentang-kami" element={<AboutUs />} />
-        <Route path="/produk" element={<Products />} />
+        <Route path="/pabrikasi" element={<Pabrikasi />} />
+        <Route path="/reparasi" element={<Reparasi />} />
+        <Route path="/spare-parts" element={<SpareParts />} />
         <Route path="/hubungi-kami" element={<Contact />} />
       </Routes>
       <Footer />

@@ -1,7 +1,4 @@
-import { Link } from 'react-router-dom';
-
 import PageLayout from '../components/PageLayout';
-
 
 import OfficeImage from '../assets/img/office.jpg';
 import ProductImage from '../assets/img/1.jpg';
@@ -45,7 +42,7 @@ const AboutUs = () => {
                   <img src={VisionImage} className="m-auto h-8 w-8" aria-hidden="true" />    
                 </div>
                 <div className="w-5/6">
-                  <h4 className="font-bold text-xl text-red-500 uppercase">Visi</h4>
+                  <h3 className="font-bold text-xl text-red-500 uppercase">Visi</h3>
                   <p className="text-gray-800 italic">Menjadi kemitraan yang produktif, inovatif dan terpercaya.</p>
                 </div> 
               </div> 
@@ -54,7 +51,7 @@ const AboutUs = () => {
                   <img src={MissionImage} className="m-auto h-8 w-8" aria-hidden="true" />                                    
                 </div>
                 <div className="w-5/6">
-                  <h4 className="font-bold text-xl text-red-500 uppercase">Misi</h4>
+                  <h3 className="font-bold text-xl text-red-500 uppercase">Misi</h3>
                   <ol className="text-gray-800 list-decimal list-inside italic">
                     <li>Mengutamakan pelayanan prima kepada mitra.</li>
                     <li>Menjalin kerjasama dengan para pihak dengan prinsip saling menguntungkan dan peningkatan nilai tambah.</li>
@@ -65,15 +62,23 @@ const AboutUs = () => {
           </div>
         </div>
       </PageLayout>
-      <section className="bg-red-700">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-          <div className="text-center">
-            <h2 className="mb-4 text-4xl font-extrabold text-white">Segera Melakukan Konsultasi!</h2>
-            <p className="mb-8 font-light text-white sm:text-xl">Dan dapatkan penawaran terbaik dari kami!</p>
-            <Link to="/hubungi-kami" className="bg-white py-4 px-10 rounded-full font-bold">Hubungi Kami</Link>
-          </div>
+      
+      <section className="bg-about-us-bg py-16 bg-fixed bg-center bg-cover">
+        <div className="container m-auto px-6 text-center md:px-12 lg:px-20">
+          <h2 className="mb-8 text-4xl font-bold text-white md:text-4xl">
+            Your money in your hands, but safe.
+          </h2>
+          <a
+            href="#"
+            className="relative flex h-12 w-full mx-auto items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span className="relative text-base font-semibold text-purple-600"
+              >Create an Account now</span
+            >
+          </a>
         </div>
       </section>
+                                    
       <PageLayout>
         <div className="py-20 space-y-6 md:flex flex-row md:gap-6 justify-center md:space-y-0 lg:items-center">
           <div className="md:5/12 lg:w-1/2">

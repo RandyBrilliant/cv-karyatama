@@ -1,7 +1,9 @@
 export const navigation = [
   { name: 'Beranda', href: '/', image: "" },
   { name: 'Tentang Kami', href: '/tentang-kami', image: "" },
-  { name: 'Produk', href: '/produk', image: "" },
+  { name: 'Pabrikasi', href: '/pabrikasi', image: "" },
+  { name: 'Reparasi', href: '/reparasi', image: "" },
+  { name: 'Spare Parts', href: '/spare-parts', image: "" },
   { name: 'Hubungi Kami', href: '/hubungi-kami', image: "" },
 ]
 

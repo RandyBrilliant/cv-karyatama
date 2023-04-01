@@ -130,9 +130,10 @@ const Contact = () => {
                     <div>
                       <button
                         type="submit"
+                        disabled
                         className="bg-red-700 w-full rounded border p-3 text-white transition hover:bg-opacity-90"
                       >
-                        Send Message
+                        Coming Soon
                       </button>
                     </div>
                   </form>
