@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import OfficeImage from '../assets/img/office.jpg';
 
 // import CallToAction from "../components/CallToAction";
-import Hero from "../components/Hero";
+import Carousel from "../components/Carousel";
 import ProductList from "../components/ProductList";
 import PageLayout from "../components/PageLayout";
 
 const Home = () => {
   return (
-    <>
-      <Hero />
+    <main>
+      <Carousel />
       <PageLayout>
-        <div className="m-auto text-gray-600 py-10">
-          <div className="bg-red-700 lg:p-16 rounded-lg space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
+        <section className="text-gray-600 py-10">
+          <div className="bg-red-700 lg:p-16 rounded-lg space-y-6 md:flex md:gap-6 justify-center md:space-y-0 items-center">
             <div className="md:5/12 lg:w-1/2">
               <img
                 src={OfficeImage}
@@ -22,11 +22,11 @@ const Home = () => {
                 loading="lazy"
               />
             </div>
-            <div className="px-5 pt-5 pb-10 md:7/12 lg:w-1/2 text-white">
-              <h2 className="font-display text-3xl font-bold md:text-4xl">
+            <div className="px-5 md:pt-5 pb-10 md:7/12 lg:w-1/2 text-white">
+              <h2 className="font-display text-3xl font-bold lg:text-4xl">
                 Tentang Kami
               </h2>
-              <p className="my-8">
+              <p className="text-sm lg:text-base my-4 lg:my-8">
                 <strong>CV. Karyatama Agro Cemerlang</strong> merupakan perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang pelayanan jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan mitra kami...
               </p>
               <Link
@@ -37,11 +37,11 @@ const Home = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
       </PageLayout>
       <ProductList />
       {/* <CallToAction /> */}
-    </>
+    </main>
   )
 }
 

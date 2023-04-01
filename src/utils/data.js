@@ -30,3 +30,21 @@ export const productList = [
     link: "/spare-parts"
   },
 ]
+
+export const carouselList = [
+  {
+    id: "1",
+    name: "Gedung Kantor CV. Karyatama Agro Cemerlang",
+    image: "./img/carousel/carousel-1.jpg",
+  },
+  {
+    id: "2",
+    name: "Kantor Bagian Admin Depan CV. Karyatama Agro Cemerlang",
+    image: "./img/carousel/carousel-2.jpg",
+  },
+  {
+    id: "3",
+    name: "Kantor Utama CV. Karyatama Agro Cemerlang",
+    image: "./img/carousel/carousel-3.jpg",
+  },
+]
