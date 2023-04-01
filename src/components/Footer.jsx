@@ -2,20 +2,22 @@ import { navigation } from '../utils/data';
 import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
 
+import LogoImageWhite from '../assets/logo-white.png';
+
 const Footer = () => {
   return (
-  <footer className="w-full bg-gray-100 dark:bg-gray-900 py-16">
+  <footer className="w-full bg-slate-900 py-16">
     <PageLayout>
-      <div className="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
+      <div className="space-y-6 text-gray-200">
+        <img src={LogoImageWhite} alt="CV. Karyatama Agro Cemerlang" className="w-32 m-auto" />
         <h2 className="text-center text-2xl font-bold">CV. Karyatama Agro Cemerlang</h2>
-        {/* <img src="images/logo.svg" alt="logo tailus" className="m-auto w-40" /> */}
         <ul
           role="list"
           className="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
         >
           {navigation.map((item, i) => (
             <li role="listitem" key={i}>
-              <Link to={item.href} className="hover:text-primary">{item.name}</Link>
+              <Link to={item.href} className="hover:text-gray-500">{item.name}</Link>
             </li>
           ))}
         </ul>
@@ -24,7 +26,7 @@ const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              className="m-auto w-5"
+              className="m-auto w-5 hover:fill-gray-500"
               viewBox="0 0 16 16"
             >
               <path
@@ -37,7 +39,7 @@ const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              className="m-auto w-5"
+              className="m-auto w-5 hover:fill-gray-500"
               viewBox="0 0 16 16"
             >
               <path

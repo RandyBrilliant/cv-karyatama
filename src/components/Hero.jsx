@@ -12,7 +12,6 @@ import Image4 from '../assets/img/4.jpg';
 
 // import required modules
 import { Navigation, Pagination } from "swiper";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,6 +23,7 @@ const Hero = () => {
         pagination={{
           clickable: true,
         }}
+        loop={true}   
         autoplay={{
           delay: 5000,
           disableOnInteraction: true,

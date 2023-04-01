@@ -6,6 +6,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'display': ['Poppins', 'sans-serif'],
+      'body': ['Raleway', 'sans-serif'],
+    },
     extend: {
       backgroundImage: {
         'about-us-bg': "url('/img/building.jpg')",

@@ -21,13 +21,13 @@ const Navbar = () => {
     <Disclosure 
       as="nav"
       className={classNames(
-        scrollPosition > 0 ? 'shadow-lg backdrop-filter backdrop-blur-lg bg-white py-2 bg-opacity-80 text-gray-800' : 'py-2 sm:py-6 shadow-none bg-transparent text-white',
+        scrollPosition > 0 ? 'shadow-lg backdrop-filter backdrop-blur-lg bg-white py-2 bg-opacity-80 text-gray-400' : 'py-2 sm:py-6 shadow-none bg-transparent text-white',
         'fixed top-0 z-20 transition duration-300 px-4 sm:px-16 w-full flex items-center',
       )}
     >
       {({ open }) => (
         <>  
-            <div className="flex items-center justify-between w-full">
+            <div className="font-body flex items-center justify-between w-full">
               <Link to="/"><img src={Logo} className="w-12 sm:w-16" alt="CV. Karyatama Agro Cemerlang" /></Link>
               <div className="hidden sm:block">
                 <div className="flex space-x-8 items-center">
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={classNames(location.pathname === item.href ? "border-b-2 border-red-700 font-extrabold" : " hover:text-gray-400 font-semibold", "text-md transition duration-100"
+                      className={classNames(location.pathname === item.href ? "border-b-2 border-red-700 font-extrabold text-gray-800" : " hover:text-gray-600 font-semibold", "text-md transition duration-100"
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >

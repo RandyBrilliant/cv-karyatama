@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 html {
-  @apply scroll-smooth box-border;
+  @apply scroll-smooth box-border font-body;
 }
 
 *,
@@ -14,4 +17,38 @@ html {
 
 body {
   @apply overflow-x-hidden;
+}
+
+.swiper-button-next {
+  background-image: url("./assets/icons/arrow-front.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url("./assets/icons/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #dc2626;
+  opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: #1f2937;
+  opacity: 1;
 }

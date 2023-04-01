@@ -6,7 +6,9 @@ import AboutUs from './pages/AboutUs';
 import Pabrikasi from './pages/Pabrikasi';
 import Reparasi from './pages/Reparasi';
 import SpareParts from './pages/SpareParts';
+import Error from './pages/Error';
 import Contact from './pages/Contact';
+
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
@@ -22,6 +24,7 @@ const App = () => {
         <Route path="/reparasi" element={<Reparasi />} />
         <Route path="/spare-parts" element={<SpareParts />} />
         <Route path="/hubungi-kami" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
       <FloatingWhatsApp
