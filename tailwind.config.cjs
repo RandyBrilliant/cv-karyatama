@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'about-us-bg': "url('/img/building.jpg')",
+        'ruang-tamu-bg': "url('/img/ruang-tamu-2.jpg')",
+        'pabrikasi-bg': "url('/img/pabrikasi.jpg')",
+        'lapangan-bg': "url('/img/lapangan.jpg')",
       }
     }
   },

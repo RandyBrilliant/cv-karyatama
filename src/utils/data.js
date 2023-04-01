@@ -11,21 +11,21 @@ export const productList = [
   {
     id: "1",
     name: "Pabrikasi",
-    description: "Kami menyediakan jasa pabrikasi untuk mensuplai kebutuhan penunjang mesin pabrik atau alat berat dengan memperhatikan setiap kualitas pembuatan alat-alat tersebut.",
+    description: "Kami menyediakan jasa pabrikasi sebagai penunjang untuk kebutuhan peralatan pabrik dan alat berat...",
     image: "https://cdn-icons-png.flaticon.com/512/2173/2173006.png",
     link: "/pabrikasi"
   },
   {
     id: "2",
     name: "Reparasi",
-    description: "Kami menyediakan jasa reparasi spare parts serta alat berat sehingga kamu tidak perlu khawatir terhadap stok suku cadang kamu yang sudah rusak.",
+    description: "Kami menyediakan jasa reparasi sebagai penunjang untuk kebutuhan peralatan pabrik, alat berat dan otomotif...",
     image: "https://cdn-icons-png.flaticon.com/512/4229/4229215.png",
     link: "/reparasi"
   },
   {
     id: "3",
     name: "Spare Parts",
-    description: "Kami menyediakan berbagai jenis spare parts untuk alat berat dan mesin pabrik yang kamu butuhkan. Kami juga menyediakan spare part untuk mobil dan motor.",
+    description: "Kami menyediakan berbagai jenis spare parts sebagai penunjang untuk kebutuhan peralatan pabrik, alat berat dan otomotif...",
     image: "https://cdn-icons-png.flaticon.com/512/2031/2031576.png",
     link: "/spare-parts"
   },

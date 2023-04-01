@@ -17,7 +17,7 @@ const CallToAction = () => {
     <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
       <div className="sm:max-w-lg">
         <h2 className="font-display text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Dapatkan Penawaran Terbaik!</h2>
-        <p className="mt-4 text-xl text-gray-500">Konsultasikan dengan staf kami untuk mendapatkan penawaran terbaik untuk kebutuhan anda!</p>
+        <p className="mt-4 text-lg md:text-xl text-gray-500">Konsultasikan dengan staf kami untuk mendapatkan penawaran terbaik untuk kebutuhan anda!</p>
       </div>
       <div>
         <div className="mt-10">
@@ -55,7 +55,7 @@ const CallToAction = () => {
             </div>
           </div>
 
-          <Link to="/hubungi-kami" className="rounded-full inline-block border border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-red-700">Hubungi Kami Sekarang</Link>
+          <Link to="/hubungi-kami" className="rounded-full inline-block border border-transparent bg-red-600 px-8 py-3 text-center font-bold text-white hover:bg-red-700">Hubungi Kami Sekarang</Link>
         </div>
       </div>
     </div>

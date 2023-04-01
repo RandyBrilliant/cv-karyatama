@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout';
 
-import OfficeImage from '../assets/img/office.jpg';
+import ClientImage from '../assets/img/client.jpg';
+import Office2Image from '../assets/img/ruang-tamu.jpg';
 import ProductImage from '../assets/img/1.jpg';
 import VisionImage from '../assets/icons/vision.svg';
 import MissionImage from '../assets/icons/mission.svg';
@@ -10,10 +11,10 @@ import { Link } from 'react-router-dom';
 const AboutUs = () => {
   return (
     <main>
-      <section id="hero" className="h-[400px] bg-about-us-bg bg-center bg-cover bg-no-repeat text-center">
+      <section id="hero" className="h-[400px] bg-ruang-tamu-bg bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">
-            <h1 className="md:text-5xl text-4xl font-bold leading-tight my-5 capitalize font-primary text-white">Tentang Kami</h1>
+            <h1 className="font-display md:text-5xl text-4xl font-bold leading-tight my-5 capitalize font-primary text-white">Tentang Kami</h1>
             <p className="text-xl font-secondary mb-5 text-gray-300">
               Bagaimana kami dapat menyediakan produk layanan yang terbaik bagi kamu!
             </p>
@@ -24,18 +25,18 @@ const AboutUs = () => {
         <div className="py-20 space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
           <div className="md:5/12 lg:w-1/2">
             <img
-              src={OfficeImage}
+              src={Office2Image}
               alt="image"
               loading="lazy"
             />
           </div>
           <div className="md:7/12 lg:w-1/2">
-            <h2 className="text-red-700 text-3xl sm:text-4xl font-bold">
+            <h2 className="font-display text-red-700 text-3xl sm:text-4xl font-bold">
               Profil Perusahaan
             </h2>
             <h3 className="text-lg sm:text-xl font-medium italic">CV. Karyatama Agro Cemerlang</h3>
             <p className="my-8 text-gray-800">
-              CV. Karyatama Agro Cemerlang merupakan perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang pelayanan jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan klien kami.
+              CV. Karyatama Agro Cemerlang merupakan perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang pelayanan jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan mitra kami.
             </p>
             <div className="divide-y space-y-4 divide-gray-800">
               <div className="mt-8 flex gap-4 md:items-center">
@@ -64,13 +65,13 @@ const AboutUs = () => {
         </div>
       </PageLayout>
       
-      <section className="bg-about-us-bg py-16 bg-fixed bg-center bg-cover">
+      <section className="bg-lapangan-bg py-16 bg-fixed bg-center bg-cover">
         <div className="container m-auto px-6 text-center md:px-12 lg:px-20">
-          <h2 className="mb-8 text-4xl font-bold text-white md:text-4xl">
+          <h2 className="font-display mb-8 text-4xl font-bold text-white md:text-4xl">
             Segera Dapatkan Penawaran Menarik dari Kami!
           </h2>
           <Link
-            href="#"
+            to="/hubungi-kami"
             className="relative flex h-12 w-full mx-auto items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-red-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
           >
             <span className="relative text-base font-semibold text-white"
@@ -84,17 +85,17 @@ const AboutUs = () => {
         <div className="py-20 space-y-6 md:flex flex-row md:gap-6 justify-center md:space-y-0 lg:items-center">
           <div className="md:5/12 lg:w-1/2">
             <img
-              src={ProductImage}
+              src={ClientImage}
               alt="image"
               loading="lazy"
             />
           </div>
           <div className="md:7/12 lg:w-1/2">
-            <h2 className="text-red-700 text-3xl sm:text-4xl font-bold">
-              Klien Kami
+            <h2 className="font-display text-red-700 text-3xl sm:text-4xl font-bold">
+              Mitra Kami
             </h2>
             <p className="my-5 text-gray-800">
-              Kami telah dipercaya oleh banyak perusahaan besar dalam menyediakan produk serta layanan terbaik. Pengalaman kami sudah teruji melalui beberapa klien dibawah ini yang telah menjadi mitra kami selama bertahun-tahun. Beberapa diantaranya seperti:
+              Kami telah dipercayai oleh beberapa perusahaan dalam penyediaan jasa dan produk yang telah menjadi mitra kami selama ini. Adapun diantaranya seperti:
             </p>
             <ul className="text-gray-800 list-inside font-semibold space-y-1">
               <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Karya Tanah Subur</li>

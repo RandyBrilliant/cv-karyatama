@@ -6,9 +6,9 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Image1 from '../assets/img/1.jpg';
-import Image2 from '../assets/img/2.jpg';
-import Image4 from '../assets/img/4.jpg';
+import Image1 from '../assets/img/building.jpg';
+import Image2 from '../assets/img/office.jpg';
+import Image3 from '../assets/img/office-2.jpg';
 
 // import required modules
 import { Navigation, Pagination } from "swiper";
@@ -47,7 +47,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="relative w-full h-full">
-            <img src={Image4} className="w-screen h-80 sm:h-[600px] object-cover" />
+            <img src={Image3} className="w-screen h-80 sm:h-[600px] object-cover" />
             <div className="text-white backdrop-brightness-75 w-screen max-w-screen h-full absolute flex flex-col items-center justify-center bottom-0 text-center">
             </div>
           </div>

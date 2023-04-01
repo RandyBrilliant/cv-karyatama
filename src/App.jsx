@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './hooks/ScrollToTop';
 
 const App = () => {
   return (
