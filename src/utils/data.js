@@ -48,3 +48,15 @@ export const carouselList = [
     image: "./img/carousel/carousel-3.jpg",
   },
 ]
+
+export const mitraList = [
+  "PT. Karya Tanah Subur", 
+  "PT. Surya Panen Subur", 
+  "PT. Perkebunan Limbah Bhakti", 
+  "PT. Kimia Tirta Utama",
+  "PT. Eka Dura Indonesia",
+  "PT. Sawit Asahan Indah",
+  "PT. Sari Lembah Subur",
+  "PT. Tunggal Perkasa Plantation",
+  "PT. Sari Aditya Loka"
+]

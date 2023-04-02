@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom';
+
+import { mitraList } from '../utils/data';
+
 import PageLayout from '../components/PageLayout';
 
 import ClientImage from '../assets/img/client.jpg';
 import Office2Image from '../assets/img/ruang-tamu.jpg';
-import ProductImage from '../assets/img/1.jpg';
 import VisionImage from '../assets/icons/vision.svg';
 import MissionImage from '../assets/icons/mission.svg';
 import CheckmarkImage from '../assets/icons/checkmark.svg';
-import { Link } from 'react-router-dom';
+
+
 
 const AboutUs = () => {
   return (
@@ -74,9 +78,9 @@ const AboutUs = () => {
             to="/hubungi-kami"
             className="relative flex h-12 w-full mx-auto items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-red-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
           >
-            <span className="relative text-base font-semibold text-white"
-              >Hubungi Kami Sekarang</span
-            >
+            <span className="relative text-base font-semibold text-white">
+              Hubungi Kami Sekarang
+            </span>
           </Link>
         </div>
       </section>
@@ -86,7 +90,7 @@ const AboutUs = () => {
           <div className="md:5/12 lg:w-1/2">
             <img
               src={ClientImage}
-              alt="image"
+              alt="Mitra kami"
               loading="lazy"
             />
           </div>
@@ -98,15 +102,9 @@ const AboutUs = () => {
               Kami telah dipercayai oleh beberapa perusahaan dalam penyediaan jasa dan produk yang telah menjadi mitra kami selama ini. Adapun diantaranya seperti:
             </p>
             <ul className="text-gray-800 list-inside font-semibold space-y-1">
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Karya Tanah Subur</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Surya Panen Subur</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Perkebunan Limbah Bhakti</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Kimia Tirta Utama</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Eka Dura Indonesia</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Sawit Asahan Indah</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Sari Lembah Subur</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Tunggal Perkasa Plantation</li>
-              <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />PT. Sari Aditya Loka</li>
+              {mitraList.map((mitra) => (
+                <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />{mitra}</li>
+              ))}
             </ul>
           </div>
         </div>
