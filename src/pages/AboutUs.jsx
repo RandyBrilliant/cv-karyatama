@@ -20,7 +20,7 @@ const AboutUs = () => {
           <div className="mx-10">
             <h1 className="font-display md:text-5xl text-4xl font-bold leading-tight my-5 capitalize font-primary text-white">Tentang Kami</h1>
             <p className="text-xl font-secondary mb-5 text-gray-300">
-              Bagaimana kami dapat menyediakan produk layanan yang terbaik bagi kamu!
+              Bagaimana kami dapat menyediakan produk layanan yang terbaik bagi mitra!
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ const AboutUs = () => {
             </h2>
             <h3 className="text-lg sm:text-xl font-medium italic">CV. Karyatama Agro Cemerlang</h3>
             <p className="my-8 text-gray-800">
-              CV. Karyatama Agro Cemerlang merupakan perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang pelayanan jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan mitra kami.
+              CV. Karyatama Agro Cemerlang adalah perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan mitra kami.
             </p>
             <div className="divide-y space-y-4 divide-gray-800">
               <div className="mt-8 flex gap-4 md:items-center">

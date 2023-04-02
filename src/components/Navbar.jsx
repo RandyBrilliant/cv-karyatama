@@ -29,9 +29,9 @@ const Navbar = () => {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={classNames(location.pathname.includes(item.href)  ? "border-b-2 border-red-700 font-extrabold text-gray-800" : " hover:text-gray-600 font-semibold", "font-display text-xs lg:text-sm transition duration-100"
+                      className={classNames(location.pathname === item.href ? "border-b-2 border-red-700 font-extrabold text-gray-800" : " hover:text-gray-600 font-semibold", "font-display text-xs lg:text-sm transition duration-100"
                       )}
-                      aria-current={location.pathname.includes(item.href) ? 'page' : undefined}
+                      aria-current={location.pathname === item.href ? 'page' : undefined}
                     >
                       {item.name}
                     </Link>

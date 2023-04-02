@@ -52,7 +52,7 @@ export const carouselList = [
 export const mitraList = [
   "PT. Karya Tanah Subur", 
   "PT. Surya Panen Subur", 
-  "PT. Perkebunan Limbah Bhakti", 
+  "PT. Perkebunan Lembah Bhakti", 
   "PT. Kimia Tirta Utama",
   "PT. Eka Dura Indonesia",
   "PT. Sawit Asahan Indah",
@@ -229,9 +229,10 @@ export const sparePartOtomotif = [
     id: 1,
     name: "ISUZU",
     description: "Kami menyediakan Stockiest spare parts untuk unit sebagai berikut.",
-    products: ["ISUZU ELF"],
+    products: ["ISUZU ELF", "ISUZU D-MAX"],
     images: [
       './img/otomotif/isuzu/1.webp',
+      './img/otomotif/isuzu/2.jpg',
     ]
   },
   {
@@ -388,7 +389,7 @@ export const reparasi = [
   {
     id: 7,
     name: "Hose",
-    description: "Proses reparasi Hose.",
+    description: "Proses pengadaan Hose.",
     images: [
       './img/reparasi/hose/1.jpg',
     ]
@@ -421,7 +422,7 @@ export const reparasi = [
   },
   {
     id: 11,
-    name: "Tranmisi",
+    name: "Transmisi",
     description: "Proses reparasi Transmisi.",
     images: [
       './img/reparasi/transmisi/1.jpg',
