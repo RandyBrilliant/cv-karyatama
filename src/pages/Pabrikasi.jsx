@@ -1,99 +1,9 @@
 import Zoom from 'react-medium-image-zoom';
 
+import { listPabrikasi } from '../utils/data';
+
 import 'react-medium-image-zoom/dist/styles.css';
 
-const products = [
-  {
-    id: 1,
-    name: 'Jack Hydrolic',
-    href: '#',
-    imageSrc: './pabrikasi/1.jpg',
-  },
-  {
-    id: 2,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/2.jpg',
-  },
-  {
-    id: 3,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/3.jpg',
-  },
-  {
-    id: 4,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/4.jpg',
-  },
-  {
-    id: 5,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/5.jpg',
-  },
-  {
-    id: 6,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/6.jpg',
-  },
-  {
-    id: 7,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/7.jpg',
-  },
-  {
-    id: 8,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/8.jpg',
-  },
-  {
-    id: 9,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/9.jpg',
-  },
-  {
-    id: 10,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/10.jpg',
-  },
-  {
-    id: 11,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/11.jpg',
-  },
-  {
-    id: 12,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/12.jpg',
-  },
-  {
-    id: 13,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/13.jpg',
-  },
-  {
-    id: 14,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/14.jpg',
-  },
-  {
-    id: 15,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: './pabrikasi/15.jpg',
-  },
-]
 const Pabrikasi = () => {
   return (
     <main>
@@ -110,7 +20,7 @@ const Pabrikasi = () => {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="font-display text-2xl font-bold tracking-tight text-gray-900">Jenis Produk</h2>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {products.map((product) => (
+          {listPabrikasi.map((product) => (
             <div key={product.id} className="group relative">
               <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <Zoom>

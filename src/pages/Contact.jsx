@@ -18,12 +18,12 @@ const Contact = () => {
                     Hubungi Kami
                   </span>
                   <h2
-                    className="font-display text-dark mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+                    className="font-display mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
                   >
                     Dapatkan Penawaran Terbaik!
                   </h2>
                   <p className="text-body-color mb-9 text-base leading-relaxed">
-                    Atau kamu dapat mengunjungi kantor kami melalui informasi alamat dibawah ini.
+                    Atau dapat langsung menghubungi kami melalui informasi di:.
                   </p>
                   <div className="mb-8 flex w-full max-w-[370px]">
                     <div
@@ -43,8 +43,42 @@ const Contact = () => {
                     <div className="w-full">
                       <h4 className="text-dark mb-1 text-xl font-bold">Alamat Kantor</h4>
                       <p className="text-body-color text-base">
-                        Jalan Cemara No. 86, Kota Medan, Sumatera Utara, Indonesia
+                        Jalan Cemara / Kol. Bejo No. 86, Kota Medan, Sumatera Utara 20239, Indonesia
                       </p>
+                    </div>
+                  </div>
+                  <div className="mb-8 flex w-full max-w-[370px]">
+                    <div
+                      className="bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]"
+                    >
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        class="ionicon" 
+                        width="24"
+                        height="24"
+                        viewBox="0 0 512 512"
+                      >
+                        <path 
+                          d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" 
+                          fill="none" 
+                          stroke="#000" 
+                          stroke-miterlimit="10" 
+                          stroke-width="32"
+                        />
+                        <path 
+                          fill="none" 
+                          stroke="#000" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                          strokeWidth="32" 
+                          d="M256 128v144h96"
+                        />
+                      </svg>
+                    </div>
+                    <div className="w-full">
+                      <h4 className="text-dark mb-1 text-xl font-bold">Jam Operasional</h4>
+                      <p className="text-base">Senin - Jumat : 09.00 WIB - 16.45 WIB</p>
+                      <p className="text-base">Sabtu : 09.00 WIB - 15.00 WIB</p>
                     </div>
                   </div>
                   <div className="mb-8 flex w-full max-w-[370px]">
@@ -70,7 +104,8 @@ const Contact = () => {
                     </div>
                     <div className="w-full">
                       <h4 className="text-dark mb-1 text-xl font-bold">No. Telepon</h4>
-                      <p className="text-body-color text-base">(+62)61 6611 987</p>
+                      <p className="text-body-color text-base">Kantor: (+62)61 6611 987</p>
+                      <p className="text-body-color text-base">HP: (+62)857 6224 6528</p>
                     </div>
                   </div>
                   <div className="mb-8 flex w-full max-w-[370px]">

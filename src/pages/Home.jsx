@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-import OfficeImage from '../assets/img/office.jpg';
+import LogoWhite from '../assets/logo-white.png';
 
-// import CallToAction from "../components/CallToAction";
 import Carousel from "../components/Carousel";
 import ProductList from "../components/ProductList";
 import PageLayout from "../components/PageLayout";
@@ -16,8 +15,8 @@ const Home = () => {
           <div className="bg-red-700 lg:p-16 rounded-lg space-y-6 md:flex md:gap-6 justify-center md:space-y-0 items-center">
             <div className="md:5/12 lg:w-1/2">
               <img
-                src={OfficeImage}
-                className="rounded-lg"
+                src={LogoWhite}
+                className="w-full lg:w-1/2 mx-auto shadow-md rounded-full"
                 alt="Kantor CV. Karyatama Agro Cemerlang"
                 loading="lazy"
               />

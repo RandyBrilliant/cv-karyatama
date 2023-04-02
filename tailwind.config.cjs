@@ -16,6 +16,10 @@ module.exports = {
         'ruang-tamu-bg': "url('/img/ruang-tamu-2.jpg')",
         'pabrikasi-bg': "url('/img/pabrikasi.jpg')",
         'lapangan-bg': "url('/img/lapangan.jpg')",
+        'spare-parts': "url('/img/spare-parts.jpg')",
+        'otomotif': "url('/img/otomotif.jpg')",
+        'alat-berat': "url('/img/alat-berat.jpg')",
+        'spare-parts-lainnya': "url('/img/spare-parts-lainnya.jpg')",
       }
     }
   },
