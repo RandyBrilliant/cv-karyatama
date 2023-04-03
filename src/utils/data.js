@@ -65,77 +65,77 @@ export const listPabrikasi = [
   {
     id: 1,
     name: 'Jack Hydrolic',
-    imageSrc: './pabrikasi/1.jpg',
+    imageSrc: './img/pabrikasi/1.jpg',
   },
   {
     id: 2,
     name: 'Yoke Universal Joint',
-    imageSrc: './pabrikasi/2.jpg',
+    imageSrc: './img/pabrikasi/2.jpg',
   },
   {
     id: 3,
     name: 'Bracket',
-    imageSrc: './pabrikasi/3.jpg',
+    imageSrc: './img/pabrikasi/3.jpg',
   },
   {
     id: 4,
     name: 'Guide',
-    imageSrc: './pabrikasi/4.jpg',
+    imageSrc: './img/pabrikasi/4.jpg',
   },
   {
     id: 5,
     name: 'R.I.M. Wheel',
-    imageSrc: './pabrikasi/5.jpg',
+    imageSrc: './img/pabrikasi/5.jpg',
   },
   {
     id: 6,
     name: 'Gear Set : Final Drive',
-    imageSrc: './pabrikasi/6.jpg',
+    imageSrc: './img/pabrikasi/6.jpg',
   },
   {
     id: 7,
     name: 'Wheel Worm',
-    imageSrc: './pabrikasi/7.jpg',
+    imageSrc: './img/pabrikasi/7.jpg',
   },
   {
     id: 8,
     name: 'Adjuster',
-    imageSrc: './pabrikasi/8.jpg',
+    imageSrc: './img/pabrikasi/8.jpg',
   },
   {
     id: 9,
     name: 'Mal Sporcket',
-    imageSrc: './pabrikasi/9.jpg',
+    imageSrc: './img/pabrikasi/9.jpg',
   },
   {
     id: 10,
     name: 'Shaft',
-    imageSrc: './pabrikasi/10.jpg',
+    imageSrc: './img/pabrikasi/10.jpg',
   },
   {
     id: 11,
     name: 'Roller Assy CANYCOM',
-    imageSrc: './pabrikasi/11.jpg',
+    imageSrc: './img/pabrikasi/11.jpg',
   },
   {
     id: 12,
     name: 'Silencer Exhaust JCB',
-    imageSrc: './pabrikasi/12.jpg',
+    imageSrc: './img/pabrikasi/12.jpg',
   },
   {
     id: 13,
     name: 'Cage',
-    imageSrc: './pabrikasi/13.jpg',
+    imageSrc: './img/pabrikasi/13.jpg',
   },
   {
     id: 14,
     name: 'Bracket D31P',
-    imageSrc: './pabrikasi/14.jpg',
+    imageSrc: './img/pabrikasi/14.jpg',
   },
   {
     id: 15,
     name: 'Guide Carry Roller D85E-SS',
-    imageSrc: './pabrikasi/15.jpg',
+    imageSrc: './img/pabrikasi/15.jpg',
   },
 ]
 

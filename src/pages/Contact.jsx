@@ -14,7 +14,7 @@ const Contact = () => {
       </Helmet>
       <section className="min-h-[600px] text-gray-600 body-font relative">
         <div className="absolute inset-0 bg-gray-300 w-screen">
-          <iframe style={{filter: "grayscale(0.2) contrast(1.2) brightness(0.75)"}} marginheight="0" marginwidth="0" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.8147871268775!2d98.67517891475869!3d3.6297320973587994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031339a6f4c28dd%3A0x5e1363fcdd18614!2sKaryatama%20Agro%20Cemerlang.CV!5e0!3m2!1sen!2sid!4v1679717536791!5m2!1sen!2sid" width="100%" height="100%" frameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style={{filter: "grayscale(0.2) contrast(1.2) brightness(0.75)"}} title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.8147871268775!2d98.67517891475869!3d3.6297320973587994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031339a6f4c28dd%3A0x5e1363fcdd18614!2sKaryatama%20Agro%20Cemerlang.CV!5e0!3m2!1sen!2sid!4v1679717536791!5m2!1sen!2sid" width="100%" height="100%" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
       <PageLayout>
@@ -62,7 +62,7 @@ const Contact = () => {
                     >
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
-                        class="ionicon" 
+                        className="ionicon" 
                         width="24"
                         height="24"
                         viewBox="0 0 512 512"
@@ -71,8 +71,8 @@ const Contact = () => {
                           d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" 
                           fill="none" 
                           stroke="#000" 
-                          stroke-miterlimit="10" 
-                          stroke-width="32"
+                          strokeMiterlimit="10" 
+                          strokeWidth="32"
                         />
                         <path 
                           fill="none" 
@@ -191,8 +191,8 @@ const Contact = () => {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
                           fill="#3056D3"
                         />
