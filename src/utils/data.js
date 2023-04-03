@@ -1,10 +1,10 @@
 export const navigation = [
-  { name: 'Beranda', href: '/' },
-  { name: 'Tentang Kami', href: '/tentang-kami' },
-  { name: 'Pabrikasi', href: '/pabrikasi' },
-  { name: 'Reparasi', href: '/reparasi' },
-  { name: 'Spare Parts', href: '/spare-parts' },
-  { name: 'Hubungi Kami', href: '/hubungi-kami' },
+  { name: 'Beranda', href: '' },
+  { name: 'Tentang Kami', href: 'tentang-kami' },
+  { name: 'Pabrikasi', href: 'pabrikasi' },
+  { name: 'Reparasi', href: 'reparasi' },
+  { name: 'Spare Parts', href: 'spare-parts' },
+  { name: 'Hubungi Kami', href: 'hubungi-kami' },
 ]
 
 export const productList = [

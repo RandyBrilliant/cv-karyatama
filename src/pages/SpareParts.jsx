@@ -1,3 +1,4 @@
+import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
 
 import { kategoriSpareParts } from '../utils/data';
@@ -5,6 +6,13 @@ import { kategoriSpareParts } from '../utils/data';
 const   SpareParts = () => {
   return (
     <main>
+      <Helmet>
+        <title>Spare Parts | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Kami menyediakan berbagai jenis spare parts sebagai penunjang untuk kebutuhan peralatan pabrik, alat berat dan otomotif. "
+        />
+      </Helmet>
       <section id="hero" className="h-[400px] bg-spare-parts bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">
@@ -21,8 +29,8 @@ const   SpareParts = () => {
             <h2 className="text-2xl font-bold text-gray-900">Kategori Produk</h2>
 
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-              {kategoriSpareParts.map((sparepart) => (
-                <div key={sparepart.name} className="group relative">
+              {kategoriSpareParts.map((sparepart, i) => (
+                <div key={i} className="group relative">
                   <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                     <img
                       src={`../${sparepart.imageSrc}`}

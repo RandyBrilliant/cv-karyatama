@@ -1,8 +1,17 @@
+import {Helmet} from "react-helmet";
+
 import PageLayout from "../components/PageLayout";
 
 const Contact = () => {
   return (
     <main>
+      <Helmet>
+        <title>Hubungi Kami | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Hubungi kami untuk mendapatkan penawaran terbaik dari CV. Karyatama Agro Cemerlang. Kami akan memberikan pelayanan terbaik untuk mitra kami."
+        />
+      </Helmet>
       <section className="min-h-[600px] text-gray-600 body-font relative">
         <div className="absolute inset-0 bg-gray-300 w-screen">
           <iframe style={{filter: "grayscale(0.2) contrast(1.2) brightness(0.75)"}} marginheight="0" marginwidth="0" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.8147871268775!2d98.67517891475869!3d3.6297320973587994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031339a6f4c28dd%3A0x5e1363fcdd18614!2sKaryatama%20Agro%20Cemerlang.CV!5e0!3m2!1sen!2sid!4v1679717536791!5m2!1sen!2sid" width="100%" height="100%" frameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe>

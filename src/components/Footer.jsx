@@ -17,7 +17,7 @@ const Footer = () => {
         >
           {navigation.map((item, i) => (
             <li role="listitem" key={i}>
-              <Link to={item.href} className="hover:text-gray-500">{item.name}</Link>
+              <Link to={`/${item.href}`} className="hover:text-gray-500">{item.name}</Link>
             </li>
           ))}
         </ul>

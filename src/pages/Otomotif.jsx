@@ -1,9 +1,19 @@
+import {Helmet} from "react-helmet";
+
 import { sparePartOtomotif } from '../utils/data';
+
 import CheckmarkImage from '../assets/icons/checkmark.svg';
 
 const Otomotif = () => {
   return (
     <main>
+      <Helmet>
+        <title>Otomotif | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Kami menyediakan beragam spare parts untuk kebutuhan otomotif mulai dari kendaraan bermerek ISUZU, Toyota, Nissan Diesel serta kendaraan merek lainnya. "
+        />
+      </Helmet>
       <section id="hero" className="h-[400px] bg-otomotif bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">

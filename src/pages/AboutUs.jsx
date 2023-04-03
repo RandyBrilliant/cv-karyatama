@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 import { mitraList } from '../utils/data';
 
@@ -15,6 +16,13 @@ import CheckmarkImage from '../assets/icons/checkmark.svg';
 const AboutUs = () => {
   return (
     <main>
+      <Helmet>
+        <title>Tentang Kami | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="CV. Karyatama Agro Cemerlang adalah perusahaan yang terletak di provinsi Sumatera Utara tepatnya di kota Medan yang telah berdiri sejak tahun 2021. Kami menyediakan berbagai pelayanan seperti di bidang jasa pabrikasi, reparasi serta pengadaan spare parts untuk memenuhi kebutuhan mitra kami."
+        />
+      </Helmet>
       <section id="hero" className="h-[400px] bg-ruang-tamu-bg bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">
@@ -26,7 +34,7 @@ const AboutUs = () => {
         </div>
       </section>
       <PageLayout>
-        <div className="py-20 space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
+        <div className="py-20 space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 md:items-center">
           <div className="md:5/12 lg:w-1/2">
             <img
               src={Office2Image}
@@ -46,7 +54,7 @@ const AboutUs = () => {
               <div className="mt-8 flex gap-4 md:items-center">
                 <div className="w-16 h-16 flex gap-4 rounded-full bg-red-700">
                   <img src={VisionImage} className="m-auto h-8 w-8" aria-hidden="true" />    
-                </div>
+                </div>                                    
                 <div className="w-5/6">
                   <h3 className="font-bold text-xl text-red-500 uppercase">Visi</h3>
                   <p className="text-gray-800 italic">Menjadi kemitraan yang produktif, inovatif dan terpercaya.</p>
@@ -86,7 +94,7 @@ const AboutUs = () => {
       </section>
                                     
       <PageLayout>
-        <div className="py-20 space-y-6 md:flex flex-row md:gap-6 justify-center md:space-y-0 lg:items-center">
+        <div className="py-20 space-y-6 md:flex flex-row md:gap-6 justify-center md:space-y-0 md:items-center">
           <div className="md:5/12 lg:w-1/2">
             <img
               src={ClientImage}
@@ -102,8 +110,8 @@ const AboutUs = () => {
               Kami telah dipercayai oleh beberapa perusahaan dalam penyediaan jasa dan produk yang telah menjadi mitra kami selama ini. Adapun diantaranya seperti:
             </p>
             <ul className="text-gray-800 list-inside font-semibold space-y-1">
-              {mitraList.map((mitra) => (
-                <li><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />{mitra}</li>
+              {mitraList.map((mitra, i) => (
+                <li key={i}><img src={CheckmarkImage} alt="Checkmark" className="w-6 h-6 mr-2 inline" />{mitra}</li>
               ))}
             </ul>
           </div>

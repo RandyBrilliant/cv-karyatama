@@ -9,12 +9,13 @@ import SpareParts from './pages/SpareParts';
 import Error from './pages/Error';
 import Contact from './pages/Contact';
 import AlatBerat from './pages/AlatBerat';
+import Otomotif from './pages/Otomotif';
+import SparePartsLainnya from './pages/SparePartsLainnya';
 
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+
 import ScrollToTop from './hooks/ScrollToTop';
-import Otomotif from './pages/Otomotif';
-import SparePartsLainnya from './pages/SparePartsLainnya';
 
 import CSImage from './assets/img/cs.jpg';
 

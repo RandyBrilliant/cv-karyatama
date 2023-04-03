@@ -1,9 +1,18 @@
+import {Helmet} from "react-helmet";
+
 import { sparePartAlatBerat } from '../utils/data';
 import CheckmarkImage from '../assets/icons/checkmark.svg';
 
 const AlatBerat = () => {
   return (
     <main>
+      <Helmet>
+        <title>Alat Berat | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Kami menyediakan beragam spare parts untuk kebutuhan alat berat mulai dari Komatsu, JCB, Bomag serta merek lainnya. "
+        />
+      </Helmet>
       <section id="hero" className="h-[400px] bg-alat-berat bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">

@@ -1,4 +1,6 @@
 import Zoom from 'react-medium-image-zoom';
+import {Helmet} from "react-helmet";
+
 
 import { listPabrikasi } from '../utils/data';
 
@@ -7,6 +9,13 @@ import 'react-medium-image-zoom/dist/styles.css';
 const Pabrikasi = () => {
   return (
     <main>
+      <Helmet>
+        <title>Pabrikasi | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Kami menyediakan jasa pabrikasi sebagai penunjang untuk kebutuhan peralatan pabrik dan alat berat."
+        />
+      </Helmet>
       <section id="hero" className="h-[400px] bg-pabrikasi-bg bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">
@@ -22,12 +31,12 @@ const Pabrikasi = () => {
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {listPabrikasi.map((product) => (
             <div key={product.id} className="group relative">
-              <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <div className="min-h-80 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 h-96 lg:h-80">
                 <Zoom>
                   <img
                     src={`../${product.imageSrc}`}
                     alt={product.name}
-                    className="group-hover:scale-125 transition duration-300 h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    className="group-hover:scale-125 transition duration-300 h-full w-full object-cover object-center"
                   />
                 </Zoom>
               </div>

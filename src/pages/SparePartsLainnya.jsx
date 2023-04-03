@@ -1,9 +1,18 @@
+import {Helmet} from "react-helmet";
+
 import { sparePartLainnya } from '../utils/data';
 import CheckmarkImage from '../assets/icons/checkmark.svg';
 
 const SparePartsLainnya = () => {
   return (
     <main>
+      <Helmet>
+        <title>Spare Parts Lainnya | CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Kami juga menyediakan spare parts pendukung lainnya."
+        />
+      </Helmet>
       <section id="hero" className="h-[400px] bg-spare-parts-lainnya bg-center bg-cover bg-no-repeat text-center">
         <div className="mx-auto flex justify-center items-center backdrop-brightness-50 h-full min-w-full w-full">
           <div className="mx-10">

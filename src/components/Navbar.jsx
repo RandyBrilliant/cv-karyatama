@@ -1,6 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { navigation } from '../utils/data';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';  
 
 import CallIcon from '../assets/icons/call.svg';
 import MenuIcon from '../assets/icons/menu-outline.svg';
@@ -26,15 +26,15 @@ const Navbar = () => {
               <div className="hidden sm:block">
                 <div className="flex space-x-4 lg:space-x-8 items-center">
                   {navigation.map((item) => (
-                    <Link
+                    <NavLink
                       key={item.name}
-                      to={item.href}
-                      className={classNames(location.pathname === item.href ? "border-b-2 border-red-700 font-extrabold text-gray-800" : " hover:text-gray-600 font-semibold", "font-display text-xs lg:text-sm transition duration-100"
-                      )}
-                      aria-current={location.pathname === item.href ? 'page' : undefined}
+                      to={`/${item.href}`}
+                      className={({ isActive }) =>
+                        isActive ? "border-b-2 border-red-700 font-extrabold text-gray-800 font-display text-xs lg:text-sm transition duration-100" : "hover:text-gray-600 font-semibold font-display text-xs lg:text-sm transition duration-100"
+                      }
                     >
                       {item.name}
-                    </Link>
+                    </NavLink>
                   ))}
                 </div>
               </div>
@@ -66,12 +66,11 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as={Link}
-                  to={item.href}
-                  className={classNames(
-                    location.pathname === item.href ? 'font-bold' : 'font-medium hover:bg-red-700 hover:text-white',
-                    'text-gray-800 text-lg border-y w-full text-center py-4 transition duration-150 font-display'
-                  )}
+                  as={NavLink}
+                  to={`/${item.href}`}
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-gray-800 text-lg border-y w-full text-center py-4 transition duration-150 font-display" : "text-gray-800 text-lg border-y w-full text-center py-4 transition duration-150 font-display font-medium hover:bg-red-700 hover:text-white"
+                  }
                   aria-current={location.pathname === item.href ? 'page' : undefined}
                 >
                   {item.name}

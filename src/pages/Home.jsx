@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
+
 
 import LogoWhite from '../assets/logo-white.png';
 
@@ -9,6 +11,13 @@ import PageLayout from "../components/PageLayout";
 const Home = () => {
   return (
     <main>
+      <Helmet>
+        <title>CV. Karyatama Agro Cemerlang</title>
+        <meta
+          name="description"
+          content="Kami menyediakan berbagai jasa di bidang pabrikasi, reparasi serta spare parts untuk alat-alat berat, suku cadang, dan peralatan industri untuk memenuhi kebutuhan anda."
+        />
+      </Helmet>
       <Carousel />
       <PageLayout>
         <section className="text-gray-600 py-10">
@@ -21,7 +30,7 @@ const Home = () => {
                 loading="lazy"
               />
             </div>
-            <div className="px-5 md:pt-5 pb-10 md:7/12 lg:w-1/2 text-white">
+            <div className="text-center md:text-left px-5 md:pt-5 pb-5 md:7/12 lg:w-1/2 text-white">
               <h2 className="font-display text-3xl font-bold lg:text-4xl">
                 Tentang Kami
               </h2>
@@ -39,7 +48,6 @@ const Home = () => {
         </section>
       </PageLayout>
       <ProductList />
-      {/* <CallToAction /> */}
     </main>
   )
 }
