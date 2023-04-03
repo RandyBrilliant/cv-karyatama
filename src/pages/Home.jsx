@@ -16,7 +16,7 @@ const Home = () => {
             <div className="md:5/12 lg:w-1/2">
               <img
                 src={LogoWhite}
-                className="px-5 py-5 w-full lg:w-1/2 mx-auto shadow-md rounded-full"
+                className="px-5 py-5 w-2/3 mx-auto rounded-full"
                 alt="Kantor CV. Karyatama Agro Cemerlang"
                 loading="lazy"
               />
