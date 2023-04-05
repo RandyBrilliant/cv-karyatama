@@ -1,11 +1,14 @@
 import {Helmet} from "react-helmet";
+import Zoom from 'react-medium-image-zoom';
+import ReactPlayer from 'react-player';
 
 import VideoReparasi from '../assets/video/video-reparasi.mp4';
 import VideoExhaustEngine from '../assets/video/video-exhaust-engine.mp4';
 
-import ReactPlayer from 'react-player';
 
 import { reparasi } from '../utils/data';
+
+import 'react-medium-image-zoom/dist/styles.css';
 
 const Reparasi = () => {
   return (
@@ -39,12 +42,14 @@ const Reparasi = () => {
           <div className="grid grid-cols-2 gap-4 items-center">
             {item.images.map((image, i) =>
             (
-              <img
-                key={i}
-                src={`../${image}`}
-                alt={item.name}
-                className="rounded-lg bg-gray-100"
-              />
+              <Zoom>
+                <img
+                  key={i}
+                  src={`../${image}`}
+                  alt={item.name}
+                  className="rounded-lg bg-gray-100"
+                />
+              </Zoom>
             ))}
           </div>
         </section>
